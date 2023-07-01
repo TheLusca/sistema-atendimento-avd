@@ -1,6 +1,4 @@
-# fila-banco
-Simulador de fila de banco utilizando uma lista dinâmica em Java.
-
+# Simulador de fila de banco utilizando uma lista dinâmica em Java.
 
 **Está é a minha solução para o problema:**
 
