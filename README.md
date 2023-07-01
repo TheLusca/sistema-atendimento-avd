@@ -1,7 +1,5 @@
 # Simulador de fila de banco utilizando uma lista dinâmica em Java.
 
-**Está é a minha solução para o problema:**
-
 Implementar um algoritmo que determine o tempo médio que um cliente permanece na fila de uma agência bancária. Quando um cliente entra na fila, o horário é anotado. Quando ele sai, o tempo que ele permaneceu na fila é calculado e adicionado ao tempo total de espera. Assim, no final do expediente, é possível determinar quanto tempo, em média, cada cliente teve que aguardar para ser atendido.
 
 # Cenário da Simulação
@@ -9,10 +7,13 @@ Implementar um algoritmo que determine o tempo médio que um cliente permanece n
 Na agência há cinco guichês que atendem a uma única fila de clientes. À medida que um deles ficar livre, o primeiro cliente da fila o utiliza.
 Há apenas duas entidades envolvidas na simulação: guichês e clientes. Tudo o que é necessário saber sobre um guichê é se ele está ocupado e, caso esteja, por quanto tempo permanecerá ocupado. Inicialmente, todos os guichês estão livres. Quando um cliente inicia uma transação num deles, o tempo médio necessário para a realização da transação determina por quanto tempo o guichê permanecerá ocupado. O tempo de uso é um valor aleátirio gerado de um espaçõ definido para cada operação
 
-| Transação  |    Tempo Médio       | 
-| Saque      |  60-120 segundos     |
-| Depósito   |  121 - 242 segundos  |
-| Pagamento  |  485 - 970  segundos |
+| Transação  ->   Tempo Médio       |
+
+| Saque      ->  60 - 120 segundos     |
+
+| Depósito   ->  121 - 242 segundos  |
+
+| Pagamento  ->  485 - 970  segundos |
 
 Sobre o cliente, só é necessário saber quando ele entrou na fila para que, ao sair, seja possível calcular quanto tempo ele permaneceu nela.
 
