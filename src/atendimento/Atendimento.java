@@ -8,9 +8,6 @@ public class Atendimento {
     // Instanciando a classe Random para gerar números aleatórios
     public static Random randomico = new Random();
 
-    static int valorAleatorio = gerarValorAleatorio(60, 120);
-    static int valorAleatorio1 = gerarValorAleatorio(60, 120);
-    static int valorAleatorio2 = gerarValorAleatorio(60, 120);
 
     public static int gerarValorAleatorio(int limiteMin, int limiteMax) {
         Random random = new Random();
@@ -34,11 +31,21 @@ public class Atendimento {
         Guiche g3 = new Guiche(true);
         Guiche g4 = new Guiche(true);
         Guiche g5 = new Guiche(true);
+        // Guiche g6 = new Guiche(true);
+        // Guiche g7 = new Guiche(true);
+        // Guiche g8 = new Guiche(true);
+        // Guiche g9 = new Guiche(true);
+        // Guiche g10 = new Guiche(true);
         lista.inserir(g1);
         lista.inserir(g2);
         lista.inserir(g3);
         lista.inserir(g4);
         lista.inserir(g5);
+        // lista.inserir(g6);
+        // lista.inserir(g7);
+        // lista.inserir(g8);
+        // lista.inserir(g9);
+        // lista.inserir(g10);
 
         int tempo = 0;
         int tempoExtra = 0;
@@ -61,7 +68,7 @@ public class Atendimento {
 
                 somaEspera += tempo - fila.dequeue(); // Soma o tempo de espera de cada cliente
 
-                for (int i = 0; i <= 2; i++) { // Verifica qual guichê está livre
+                for (int i = 0; i <= 4; i++) { // Verifica qual guichê está livre
                     if (lista.obter(i).livre) {
                         lista.obter(i).livre = false; // Ocupa o guichê
                         int r = randomico.nextInt(3);
@@ -71,6 +78,7 @@ public class Atendimento {
                                 int valorAleatorio = gerarValorAleatorio(60, 120);
                                 tempoTransacao = tempo + valorAleatorio;
                                 System.out.println("saque");
+                                System.out.println(tempo);
                                 System.out.println(tempoTransacao);
                                 System.out.println(valorAleatorio);
 
@@ -78,9 +86,10 @@ public class Atendimento {
                                 break;
                             case 1:
                                 // Transação de depósito
-                                int valorAleatorio1 = gerarValorAleatorio(121, 242);
+                                int valorAleatorio1 = gerarValorAleatorio(90, 120);
                                 tempoTransacao = tempo + valorAleatorio1;
                                 System.out.println("deposito");
+                                System.out.println(tempo);
                                 System.out.println(tempoTransacao);
                                 System.out.println(valorAleatorio1);
 
@@ -88,9 +97,10 @@ public class Atendimento {
                                 break;
                             case 2:
                                 // Transação de pagamento
-                                int valorAleatorio2 = gerarValorAleatorio(485, 970);
+                                int valorAleatorio2 = gerarValorAleatorio(120, 140);
                                 tempoTransacao = tempo + valorAleatorio2;
                                 System.out.println("pagamento");
+                                System.out.println(tempo);
                                 System.out.println(tempoTransacao);
                                 System.out.println(valorAleatorio2);
 
