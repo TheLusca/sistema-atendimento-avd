@@ -78,9 +78,9 @@ public class Atendimento {
                                 int valorAleatorio = gerarValorAleatorio(60, 120);
                                 tempoTransacao = tempo + valorAleatorio;
                                 System.out.println("saque");
-                                System.out.println(tempo);
-                                System.out.println(tempoTransacao);
-                                System.out.println(valorAleatorio);
+                                System.out.println("Tempo decorrido do expediente: " + tempo / 3600 + " horas");
+                                System.out.println("Tempo decorrido do expediente + tempo de transação: " + tempoTransacao / 60 + " minutos");
+                                System.out.println("Tempo de transação: " + valorAleatorio + " segundos");
 
                                 saques++;
                                 break;
@@ -89,9 +89,9 @@ public class Atendimento {
                                 int valorAleatorio1 = gerarValorAleatorio(90, 120);
                                 tempoTransacao = tempo + valorAleatorio1;
                                 System.out.println("deposito");
-                                System.out.println(tempo);
-                                System.out.println(tempoTransacao);
-                                System.out.println(valorAleatorio1);
+                                System.out.println("Tempo decorrido do expediente: " + tempo / 3600 + " horas");
+                                System.out.println("Tempo decorrido do expediente + tempo de transação: " + tempoTransacao / 60 + " minutos");
+                                System.out.println("Tempo de transação: " + valorAleatorio1 + " segundos");
 
                                 depositos++;
                                 break;
@@ -100,10 +100,9 @@ public class Atendimento {
                                 int valorAleatorio2 = gerarValorAleatorio(120, 140);
                                 tempoTransacao = tempo + valorAleatorio2;
                                 System.out.println("pagamento");
-                                System.out.println(tempo);
-                                System.out.println(tempoTransacao);
-                                System.out.println(valorAleatorio2);
-
+                                System.out.println("Tempo decorrido do expediente: " + tempo / 3600 + " horas");
+                                System.out.println("Tempo decorrido do expediente + tempo de transação: " + tempoTransacao / 60 + " minutos");
+                                System.out.println("Tempo de transação: " + valorAleatorio2 + " segundos");
                                 pagamentos++;
                                 break;
                         }
